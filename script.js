@@ -1,8 +1,14 @@
-document.getElementById('magicBtn').addEventListener('click', function() {
-    // Cambia el color del fondo o lanza una alerta
-    document.body.style.backgroundColor = '#000';
-    alert("¡Supera tus límites, aquí y ahora! ⚔️");
+// Seleccionamos el botón
+const magicBtn = document.getElementById('magicBtn');
+
+magicBtn.addEventListener('click', () => {
+    // Lanzamos una alerta épica
+    alert("¡HAS DESPERTADO TU GRIMORIO! 📖✨");
     
-    // Podrías añadir un efecto de sonido o cambiar una imagen
-    console.log("Antimagia activada");
+    // Cambiamos el color de la tarjeta mágica temporalmente
+    const card = document.querySelector('.magic-card');
+    card.style.borderColor = '#ff4500'; // Color fuego/antimagia
+    card.style.boxShadow = '0 0 40px #ff4500';
+    
+    console.log("Magia activada con éxito.");
 });
